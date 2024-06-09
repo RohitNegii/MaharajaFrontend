@@ -28,7 +28,12 @@ const TasteView = () => {
             {boxData.map((ele) => {
               return (
                 <div className={styles["box"]}>
-                  {/* <img src="/images/home/asset27.png" /> */}
+                  <div className={styles["box-img-wrapper"]}>
+                    <img
+                      src="/images/home/asset27.png"
+                      className={styles["box-img"]}
+                    />
+                  </div>
                   <div className={styles["text-name-wrapper"]}>
                     <div className={styles["top-img-wrapper"]}>
                       <img src="/images/home/Asset18.png" />
