@@ -1,0 +1,81 @@
+.why-choose-section {
+  background: url("/images/Asset8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 0px 12%;
+  width: 100%;
+  background-color: var(--primaryColor);
+  border-bottom: 1px solid #ffffff91;
+}
+.why-choose-us-heading {
+  color: var(--primaryColor);
+  font-weight: 500;
+  font-size: 1.3rem;
+  font-family: var(--popinsFamily);
+}
+.sub-heading {
+  font-size: 1.2rem;
+  font-size: var(--headingFont);
+  color: var(--primaryColor);
+  font-family: var(--formFamily);
+  font-weight: 900;
+  text-align: center;
+}
+.img-after-choose {
+  width: 15%;
+  margin: 1vh 0px;
+}
+.img-after-choose img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.four-box-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin-top: 3vh;
+}
+.sub-heading-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 21%;
+  width: 21%;
+  gap: 1vh;
+}
+.four-box-sub-heading {
+  color: var(--primaryColor);
+  font-family: var(--formFamily);
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+.four-box-paragraph {
+  font-size: 1rem;
+  color: var(--primaryColor);
+  font-weight: 500;
+  text-align: justify;
+}
+.four-box-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.four-box-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
