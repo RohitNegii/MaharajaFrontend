@@ -23,6 +23,15 @@ const TasteView = () => {
         />
         <h2 className={styles["taste-view-heading"]}>Your Taste Views</h2>
 
+        <div className={styles["after-heading-img-wrapper"]}>
+          <img
+            src="/images/home/border.png"
+            className={styles["after-heading-img"]}
+          />
+        </div>
+
+
+
         <div className={styles["taste-view-box-design-wrapper"]}>
           <div className={styles["two-box-wrapper"]}>
             {boxData.map((ele) => {
@@ -48,9 +57,17 @@ const TasteView = () => {
               );
             })}
           </div>
-          <div className={styles["center-design-img-wrapper"]}>
-            {/* <img src="/images/home/border.png" /> */}
+          <div className={styles["three-squre-box-wrapper"]}>
+            <img src="/images/home/Asset16.png" />
+            <img src="/images/home/Asset16.png" />
+            <img src="/images/home/Asset16.png" />
           </div>
+        </div>
+        <div className={styles["center-design-img-wrapper"]}>
+          <img
+            src="/images/home/border.png"
+            className={styles["center-design-img-wrapper-img"]}
+          />
         </div>
       </section>
     </>
