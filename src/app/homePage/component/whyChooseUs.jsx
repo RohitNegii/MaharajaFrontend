@@ -43,16 +43,16 @@ const WhyChooseUs = () => {
         </p>
 
         <div className={styles["four-box-wrapper"]}>
-          {chooseJson.map((ele) => {
+          {chooseJson.map((ele, i) => {
             return (
-              <div className={styles["box-wrapper"]}>
+              <div className={styles["box-wrapper"]} key={i}>
                 <div className={styles["four-box-icon"]}>
                   <img src={ele.icon} alt="" />
                 </div>
                 <div className={styles["sub-heading-wrapper"]}>
-                  {ele.heading.split(" ").map((item) => {
+                  {ele.heading.split(" ").map((item, i) => {
                     return (
-                      <span className={styles["four-box-sub-heading"]}>
+                      <span className={styles["four-box-sub-heading"]} key={i}>
                         {item}
                         <br />
                       </span>
