@@ -30,8 +30,6 @@ const TasteView = () => {
           />
         </div>
 
-
-
         <div className={styles["taste-view-box-design-wrapper"]}>
           <div className={styles["two-box-wrapper"]}>
             {boxData.map((ele) => {
@@ -58,9 +56,18 @@ const TasteView = () => {
             })}
           </div>
           <div className={styles["three-squre-box-wrapper"]}>
-            <img src="/images/home/Asset16.png" />
-            <img src="/images/home/Asset16.png" />
-            <img src="/images/home/Asset16.png" />
+            <img
+              src="/images/home/Asset16.png"
+              className={styles["three-squre-box-wrapper-img"]}
+            />
+            <img
+              src="/images/home/Asset16.png"
+              className={styles["three-squre-box-wrapper-img"]}
+            />
+            <img
+              src="/images/home/Asset16.png"
+              className={styles["three-squre-box-wrapper-img"]}
+            />
           </div>
         </div>
         <div className={styles["center-design-img-wrapper"]}>
