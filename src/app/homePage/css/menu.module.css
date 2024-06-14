@@ -1,8 +1,26 @@
 .menu-section {
+  position: relative;
+}
+.background-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.increasing-z-index {
+  position: relative;
+  z-index: 2;
+}
+.background-img-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .popular-picks-heading {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 400;
   text-align: center;
 }
@@ -36,4 +54,135 @@
   text-decoration: none;
   margin: 4rem;
   white-space: nowrap;
+}
+.after-heading-img-wrapper {
+  width: 16%;
+  margin: 0.7rem 0px;
+  margin-inline: auto;
+}
+.after-heading-img {
+  width: 100%;
+  object-fit: contain;
+}
+.main-section-wrapper {
+  width: 90%;
+  margin-top: 2rem;
+  margin-inline: auto;
+}
+.transparent-line {
+  height: 1px;
+  border-top: 1px solid #5b5c5c;
+  align-items: center;
+  border-left: 450px solid transparent;
+  border-right: 450px solid transparent;
+  width: 100%;
+  opacity: 0.3;
+}
+.menu-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0px;
+  gap: 10%;
+}
+.one-menu-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0xp;
+  gap: 1rem;
+}
+.menu-name {
+  font-size: 1.7rem;
+  color: #fff;
+  font-family: var(--formFamily);
+}
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+.two-section-divider {
+  display: flex;
+  justify-content: center;
+}
+.left-section {
+  width: 49%;
+  min-width: 49%;
+}
+.left-border {
+  /* border-right: 1px solid var(--primaryYellow); */
+}
+.left-border {
+  position: relative;
+}
+
+.left-border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  /* Make it full width */
+  background: linear-gradient(
+    to bottom,
+
+    rgba(255, 255, 0, 0) 0%,
+    /* Start transparent */ #e3c48e2f 50%,
+    /* Fully visible in the center */ rgba(255, 255, 0, 0) 100%
+      /* End transparent */
+  );
+  pointer-events: none; /* Ensure it doesn't block interaction */
+}
+.one-combo-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 2rem 3rem;
+}
+.name-paragraph-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin: 0 7% 0 0.5rem;
+}
+.number-wrapper {
+  font-size: 1.4rem;
+  color: #fff;
+}
+.dish-name {
+  display: inline-block;
+  color: #fff;
+  font-size: 2rem;
+  color: var(--primaryYellow);
+  font-family: "Forum";
+}
+.sup-text {
+  color: #fff;
+  font-size: 0.9rem;
+  color: var(--primaryYellow);
+  font-family: "Forum";
+  display: inline-block;
+  margin-top: -1rem;
+}
+.price-wrapper {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.dish-brief {
+  color: #fff;
+  font-size: 0.8rem;
+}
+.top-right-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  object-fit: contain;
+}
+.bottom-right-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+  object-fit: contain;
+  transform: rotate(180deg);
 }
