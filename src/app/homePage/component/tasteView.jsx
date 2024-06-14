@@ -17,10 +17,36 @@ const TasteView = () => {
   return (
     <>
       <section className={styles["taste-view-section"]}>
-        <img
+        {/* <img
           src="/images/home/Asset1.png"
           className={styles["taste-view-section-img"]}
-        />
+        /> */}
+
+        <div className={styles["top-left-img-wrapper"]}>
+          <img
+            src="/images/home/Asset5.png"
+            className={styles["top-left-img-wrapper-img"]}
+          />
+        </div>
+        <div className={styles["top-right-img-wrapper"]}>
+          <img
+            src="/images/home/Asset4.png"
+            className={styles["top-left-img-wrapper-img"]}
+          />
+        </div>
+        <div className={styles["bottom-left-img-wrapper"]}>
+          <img
+            src="/images/home/Asset2.png"
+            className={styles["top-left-img-wrapper-img"]}
+          />
+        </div>
+        <div className={styles["bottom-right-img-wrapper"]}>
+          <img
+            src="/images/home/Asset3.png"
+            className={styles["top-left-img-wrapper-img"]}
+          />
+        </div>
+
         <h2 className={styles["taste-view-heading"]}>Your Taste Views</h2>
 
         <div className={styles["after-heading-img-wrapper"]}>

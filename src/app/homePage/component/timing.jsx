@@ -6,13 +6,25 @@ const Timing = () => {
   return (
     <>
       <section className={styles["timing-section"]}>
-        <div className={styles["timing-background-img-wrapper"]}>
+        <div className={styles["left-top-img-wrapper"]}>
           <img
+            src="/images/home/17.png"
+            className={styles["left-top-img-wrapper-img"]}
+          />
+        </div>
+        <div className={styles["right-bottom-img-wrapper"]}>
+          <img
+            src="/images/home/20.png"
+            className={styles["left-top-img-wrapper-img"]}
+          />
+        </div>
+        {/* <div className={styles["timing-background-img-wrapper"]}> */}
+        {/* <img
             src="/images/home/asset24.png"
             alt=""
             className={styles["timing-background-img"]}
-          />
-        </div>
+          /> */}
+        {/* </div> */}
         <div className={styles["content-img-wrapper"]}>
           <div className={styles["top-bottom-img-wrapper"]}>
             <img

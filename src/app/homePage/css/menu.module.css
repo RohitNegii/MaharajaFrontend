@@ -71,8 +71,8 @@
   margin-inline: auto;
 }
 .transparent-line {
-  height: 1px;
-  border-top: 1px solid #5b5c5c;
+  height: 2px;
+  border-top: 2px solid var(--primaryYellow);
   align-items: center;
   border-left: 450px solid transparent;
   border-right: 450px solid transparent;
@@ -122,15 +122,14 @@
   top: 0;
   right: 0;
   bottom: 0;
-  width: 1px;
+  width: 2px;
   /* Make it full width */
   background: linear-gradient(
     to bottom,
 
-    rgba(255, 255, 0, 0) 0%,
-    /* Start transparent */ #e3c48e2f 50%,
-    /* Fully visible in the center */ rgba(255, 255, 0, 0) 100%
-      /* End transparent */
+    #e3c48e18 0%,
+    /* Start transparent */ #e3c48e65 50%,
+    /* Fully visible in the center */ #e3c48e18 100% /* End transparent */
   );
   pointer-events: none; /* Ensure it doesn't block interaction */
 }

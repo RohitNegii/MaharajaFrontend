@@ -109,6 +109,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .why-choose-section {
+    padding: 3% 0px 19%;
+  }
   .four-box-wrapper {
     justify-content: center;
     gap: 2.5vh;
