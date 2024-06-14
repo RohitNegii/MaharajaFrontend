@@ -76,3 +76,41 @@
   padding: 0.5rem;
   font-size: 1.2rem;
 }
+
+@media screen and (max-width: 600px) {
+  .form-wrapper {
+    width: 95%;
+  }
+  .reserve-table-heading {
+    font-size: 1.3rem;
+  }
+  .after-heading-img-div {
+    width: 8rem;
+  }
+  .book-a-tabel-btn {
+    padding: 0.2rem 1rem;
+  }
+  .form-wrapper {
+    gap: 0.5rem;
+  }
+  .half-input,
+  .full-text {
+    /* height: 2.5rem !important; */
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .text-area {
+    height: 7rem;
+  }
+  .reserve-table-section {
+    padding: 6% 0px 16%;
+  }
+  .book-a-tabel-btn {
+    width: 95%;
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+  .btn-wrapper {
+    margin-top: 1rem;
+  }
+}
