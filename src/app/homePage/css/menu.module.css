@@ -1,5 +1,6 @@
 .menu-section {
   position: relative;
+  padding-top: 1rem;
 }
 .background-img {
   width: 100%;
@@ -136,7 +137,7 @@
 .one-combo-wrapper {
   display: flex;
   width: 100%;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
 }
 .name-paragraph-wrapper {
   display: flex;
@@ -154,14 +155,20 @@
   font-size: 2rem;
   color: var(--primaryYellow);
   font-family: "Forum";
+  font-weight: 800;
+  font-style: normal;
 }
 .sup-text {
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--primaryYellow);
   font-family: "Forum";
   display: inline-block;
-  margin-top: -1rem;
+  position: absolute;
+  top: -10%;
+}
+.dish-name-number-wrapper {
+  position: relative;
 }
 .price-wrapper {
   color: #fff;

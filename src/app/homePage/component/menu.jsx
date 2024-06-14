@@ -94,7 +94,7 @@ const Menu = () => {
   return (
     <>
       <section className={styles["menu-section"]}>
-        <img src="/images/home/16.png" className={styles["top-right-img"]}/>
+        <img src="/images/home/16.png" className={styles["top-right-img"]} />
         <div className={styles["background-img"]}>
           <img
             src="/images/home/1.png"
@@ -143,11 +143,13 @@ const Menu = () => {
                           {ele.number}
                         </div>
                         <div className={styles["name-paragraph-wrapper"]}>
-                          <p>
+                          <p className={styles["dish-name-number-wrapper"]}>
                             <span className={styles["dish-name"]}>
                               {ele.name}
                             </span>
-                            <sup className={styles["sup-text"]}>{ele.sup}</sup>
+                            <span className={styles["sup-text"]}>
+                              {ele.sup}
+                            </span>
                           </p>
                           <p className={styles["dish-brief"]}>{ele.brief}</p>
                         </div>
@@ -193,7 +195,7 @@ const Menu = () => {
             </div>
           </div>
         </div>
-        <img src="/images/home/16.png" className={styles["bottom-right-img"]}/>
+        <img src="/images/home/16.png" className={styles["bottom-right-img"]} />
       </section>
     </>
   );
