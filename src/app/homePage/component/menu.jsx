@@ -138,7 +138,7 @@ const Menu = () => {
                   .slice(0, Math.ceil(menuDish.length / 2))
                   .map((ele, index) => {
                     return (
-                      <div className={styles["one-combo-wrapper"]}>
+                      <div className={styles["one-combo-wrapper"]} key={index}>
                         <div className={styles["number-wrapper"]}>
                           {ele.number}
                         </div>
@@ -165,7 +165,7 @@ const Menu = () => {
                   .slice(Math.ceil(menuDish.length / 2), menuDish.length)
                   .map((ele, index) => {
                     return (
-                      <div className={styles["one-combo-wrapper"]}>
+                      <div className={styles["one-combo-wrapper"]} key={index}>
                         <div className={styles["number-wrapper"]}>
                           {ele.number}
                         </div>
