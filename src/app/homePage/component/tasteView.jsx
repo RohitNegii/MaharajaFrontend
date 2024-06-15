@@ -4,13 +4,13 @@ import styles from "../css/tasteView.module.css";
 const TasteView = () => {
   const boxData = [
     {
-      para: "Entdecken Sie das indische Restaurant Maharaja in Adlkofen (Alter Wirt) und genießen Sie authentische, köstliche Gerichte aus Indien. Lassen Sie sich von der exotischen Atmosphäre und dem herzlichen Service verzaubern!",
-      name: "John Doe",
+      para: "The food tasted good, there was enough quantity for the money, unfortunately the dining room is a bit fresh, the oven was only heated up and people had been sitting there for a while.",
+      name: "Gabriele Müller",
       desg: "PROFESSION",
     },
     {
-      para: "Entdecken Sie das indische Restaurant Maharaja in Adlkofen (Alter Wirt) und genießen Sie authentische, köstliche Gerichte aus Indien. Lassen Sie sich von der exotischen Atmosphäre und dem herzlichen Service verzaubern!",
-      name: "John Doe",
+      para: "We picked up food and ordered both a vegetarian and a chicken tika as well as a lamb dish and Nan with it. Unfortunately, our expectations were a bit too high due to the good reviews. Chicken and veggies were average at best and not particularly tasty. The lamb was boring with a very dominant cardamom taste. Restaurant looks like a cuvée of Indian and Bavarian with a large beer garden.",
+      name: "Florian Keim",
       desg: "PROFESSION",
     },
   ];

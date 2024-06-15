@@ -1,0 +1,19 @@
+.top-quality-section {
+  background: url("/images/home/1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.center-section-wrapper{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.left-section-img-wrapper{
+    width: 35%;
+}
+.right-section-wrapper{
+width: 50%;
+}
+    

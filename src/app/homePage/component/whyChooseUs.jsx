@@ -1,32 +1,40 @@
-import React from "react";
+"use client";
+import React, { useContext } from "react";
 
 import styles from "../css/whyChooseUs.module.css";
 
+import { userContext } from "@/app/context/context";
+
 const WhyChooseUs = () => {
+  let user = useContext(userContext);
   const chooseJson = [
     {
       icon: "/images/Asset10.png",
-      heading: "Quality Food",
-      paragraph:
-        "Enjoy authentic Indian cuisine in Adlkofen.From traditional dishes to modern favorites, we use fresh ingredients for delicious flavors.",
+      heading: user.isEnglish ? "QUALITY FOODS" : "QUALITÄTSNAHRUNG",
+      paragraph: user.isEnglish
+        ? "Enjoy authentic Indian cuisine in Landshut. From traditional dishes to modern favorites, we use fresh ingredients for delicious flavors."
+        : "Genießen Sie authentische indische Küche im Raum Landshut. Von traditionellen Gerichten bis hin zu modernen Favoriten – wir verwenden frische Zutaten für köstliche Aromen.",
     },
     {
       icon: "/images/Asset11.png",
-      heading: "Original Reciepe",
-      paragraph:
-        "Taste the best Indian food in Adlkofen! Our chefs create original d i s h e s , b l e n d i n g traditional flavors with innovative twists.",
+      heading: user.isEnglish ? "ORIGINAL RECIPES" : "ORIGINALREZEPTE",
+      paragraph: user.isEnglish
+        ? "Taste the best Indian food in Landshut! Our chefs create original dishes, blending traditional flavors with innovative twists."
+        : "Kosten Sie das beste indische Essen im Raum Landshut! Unsere Köche kreieren originale Gerichte, die traditionelle Aromen mit innovativen Akzenten verbinden.",
     },
     {
       icon: "/images/Asset12.png",
-      heading: "Trained Chef",
-      paragraph:
-        "Enjoy authentic Indian cuisine in Adlkofen. From traditional dishes to modern favorites, we use fresh ingredients for delicious flavors.",
+      heading: user.isEnglish ? "TRAINED CHEFS" : "AUSGEBILDETE KÖCHE",
+      paragraph: user.isEnglish
+        ? "Our trained chefs bring you the best Indian cuisine in Landshut and Adlkofen. With expertise and passion, they made dishes that were authentic and full of flavor."
+        : "Unsere ausgebildeten Köche bringen Ihnen die beste indische Küche in Landshut und Adlkofen. Mit Fachwissen und Leidenschaft bereiten sie Gerichte zu, die authentisch und geschmackvoll sind.",
     },
     {
       icon: "/images/Asset13.png",
-      heading: "Fast Delivery",
-      paragraph:
-        "Get your food fast! This Indian restaurant in Adlkofen offers quick delivery, ensuring you r e c e i v e your orde r promptly.",
+      heading: user.isEnglish ? "FASTEST DELIVERY" : "SCHNELLSTE LIEFERUNG",
+      paragraph: user.isEnglish
+        ? "Get your food fast! This Indian restaurant in Landshut offers quick delivery, ensuring you receive your order promptly."
+        : "Erhalten Sie Ihr Essen schnell! Unser indisches Restaurant im Raum Landshut bietet eine schnelle Lieferung und sorgt dafür, dass Sie Ihre Bestellung prompt erhalten.",
     },
   ];
   return (

@@ -1,8 +1,11 @@
-import React from "react";
+"use client";
+import React, { useContext } from "react";
 
 import styles from "../css/timing.module.css";
+import { userContext } from "@/app/context/context";
 
 const Timing = () => {
+  let user = useContext(userContext);
   return (
     <>
       <section className={styles["timing-section"]}>
@@ -36,10 +39,9 @@ const Timing = () => {
           <div className={styles["center-section-wrapper"]}>
             <div className={styles["left-content-wrapper"]}>
               <p className={styles["para"]}>
-                Entdecken Sie das indische Restaurant Maharaja in Adlkofen
-                (Alter Wirt) und genießen Sie authentische, köstliche Gerichte
-                aus Indien. Lassen Sie sich von der exotischen Atmosphäre und
-                dem herzlichen Service verzaubern!
+                {user.isEnglish
+                  ? " Savor the flavors at Maharaja, the best Indian restaurant in Adlkofen. Enjoy authentic and delicious Indian dishes in a warm and exotic atmosphere. Our excellent service and delightful cuisine will make your dining experience unforgettable."
+                  : "Genießen Sie die Aromen im Maharaja, das indische Restaurant in Adlkofen. Freuen Sie sich auf authentische und köstliche indische Gerichte in einer warmen und exotischen Atmosphäre. Unser ausgezeichneter Service und die delikate Küche werden Ihr kulinarisches Erlebnis unvergesslich machen."}
               </p>
               <h2 className={styles["heading"]}>Öffnungszeiten</h2>
 

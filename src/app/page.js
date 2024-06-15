@@ -7,6 +7,8 @@ import Banner from "./homePage/component/Banner";
 import Header from "./homePage/component/Header";
 import ReserveTable from "./homePage/component/reserveTable";
 
+import TopQuality from "./homePage/component/topQuality";
+
 export default function Home() {
   return (
     <>
@@ -14,6 +16,7 @@ export default function Home() {
         <section className="width-wrapper">
           <Header />
           <Banner />
+          <TopQuality />
           <TwoImageBox />
           <Menu />
           <WhyChooseUs />

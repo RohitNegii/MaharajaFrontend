@@ -17,7 +17,10 @@ import AdbIcon from "@mui/icons-material/Adb";
 const pages = ["Home", "Menu", "About Us", "Track order"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
+import { userContext } from "@/app/context/context";
+
 function Header() {
+  let user = React.useContext(userContext);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -35,6 +38,12 @@ function Header() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
+  const toogleLanguage = () => {
+    user.setIsEnglish(!user.isEnglish);
+  };
+
+  console.log(user.isEnglish);
 
   return (
     <AppBar
@@ -149,6 +158,18 @@ function Header() {
               }}
             >
               RESERVE TABLE
+            </Button>
+            <Button
+              variant="outlined"
+              style={{
+                color: "#fff",
+                borderColor: "var(--primaryYellow)",
+                alignSelf: "center",
+                fontSize: "1rem",
+              }}
+              onClick={() => toogleLanguage()}
+            >
+              {user.isEnglish ? "Eng" : "Ger"}
             </Button>
           </Box>
 
