@@ -1,0 +1,35 @@
+.main-section {
+  position: relative;
+  width: 100%;
+  background-color: var(--primaryColor);
+  padding: 3%;
+  /* height: 200px; */
+}
+
+.heading {
+  color: #fff;
+  font-family: var(--formFamily);
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.image-container {
+  width: 100%;
+  padding: 2% 14%;
+}
+.image-container img {
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .main-section {
+    padding: 5% 3%;
+  }
+  .heading {
+    font-size: 1.3rem;
+  }
+  .image-container {
+    padding: 10%;
+  }
+}

@@ -10,11 +10,17 @@ export const metadata = {
 
 import { UserProvider } from "./context/context";
 
+import Header from "./homePage/component/Header";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <UserProvider>
-        <body className={inter.className}>{children}</body>
+        <body className={inter.className}>
+          {" "}
+          <Header />
+          {children}
+        </body>
       </UserProvider>
     </html>
   );

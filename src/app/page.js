@@ -9,12 +9,13 @@ import ReserveTable from "./homePage/component/reserveTable";
 
 import TopQuality from "./homePage/component/topQuality";
 
+import SplendorOf from "./homePage/component/SplendorOf";
+
 export default function Home() {
   return (
     <>
       <main className="home-page-main">
         <section className="width-wrapper">
-          <Header />
           <Banner />
           <TopQuality />
           <TwoImageBox />
@@ -23,6 +24,7 @@ export default function Home() {
           <Timing />
           <TasteView />
           <ReserveTable />
+          <SplendorOf />
         </section>
       </main>
     </>

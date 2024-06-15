@@ -192,3 +192,9 @@
   object-fit: contain;
   transform: rotate(180deg);
 }
+
+@media screen and (max-width: 600px) {
+  .menu-section {
+    display: none;
+  }
+}

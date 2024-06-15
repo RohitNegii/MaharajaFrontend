@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useContext } from "react";
 import styles from "../css/Banner.module.css";
 import Image from "next/image";
