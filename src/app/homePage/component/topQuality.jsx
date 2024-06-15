@@ -55,7 +55,7 @@ const TopQuality = () => {
               ? " OUR TOP-QUALITY INDIAN DISHES AND EXCELLENT SERVICE ARE UNMATCHED. EXPERIENCE THE Best Indian cuisine in Landshut"
               : "UNSERE ERSTKLASSIGEN INDISCHEN GERICHTE UND UNSER HERVORRAGENDER SERVICE SIND UNÜBERTROFFEN. ERLEBEN SIE DIE BESTE INDISCHE KÜCHE IM RAUM LANDSHUT"}
           </h2>
-          <div>
+          <div style={{ marginTop: "2npm %" }}>
             <p className={style["para"]}>
               {user.isEnglish
                 ? "Experience the finest Indian cuisine at Maharaja Restaurant, the best Indian restaurant in Landshut. Our team of chefs, experts in Indian rustic cooking, has been specially chosen to bring you the finest culinary experience. Taste dishes cooked in traditional clay ovens, preserving their flavors and nutrients."

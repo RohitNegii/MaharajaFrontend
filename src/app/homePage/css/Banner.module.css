@@ -56,9 +56,13 @@
 }
 
 @media (max-width: 600px) {
+  .auth-heading {
+    font-size: 1.5rem;
+  }
   .heading-h1 {
-    font-size: 2.2rem;
-    line-height: 3rem;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    width: 100%;
   }
   .after-heading-img-wrapper {
     width: 50%;
@@ -66,5 +70,13 @@
   .view-menu-btn {
     margin-top: 5%;
     font-size: 1rem;
+  }
+  .after-heading-img-wrapper {
+    width: 8rem;
+    margin: 0.5rem 0px;
+  }
+  .view-menu-btn {
+    font-size: 0.9rem;
+    padding: 0.2rem 2rem;
   }
 }
