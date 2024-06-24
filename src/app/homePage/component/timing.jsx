@@ -28,14 +28,16 @@ const Timing = () => {
             className={styles["timing-background-img"]}
           /> */}
         {/* </div> */}
+        <div
+          className={`${styles["top-bottom-img-wrapper"]} dimond-image-wrapper`}
+        >
+          <img
+            src="/images/home/border.png"
+            alt=""
+            className={styles["top-bottom-img"]}
+          />
+        </div>
         <div className={styles["content-img-wrapper"]}>
-          <div className={styles["top-bottom-img-wrapper"]}>
-            <img
-              src="/images/home/border.png"
-              alt=""
-              className={styles["top-bottom-img"]}
-            />
-          </div>
           <div className={styles["center-section-wrapper"]}>
             <div className={styles["left-content-wrapper"]}>
               <p className={styles["para"]}>
@@ -67,20 +69,34 @@ const Timing = () => {
             </div>
 
             <div className={styles["right-section-img-wrapper"]}>
+              <div className={styles["img-upper-wrapper"]}>
+                <img
+                  src="/images/home/Asset7.png"
+                  className={styles["upper-img"]}
+                />
+              </div>
               <img
                 src="/images/home/Asset25.png"
                 alt=""
                 className={styles["right-section-img"]}
               />
+              <div className={styles["img-upper-wrapper"]}>
+                <img
+                  src="/images/home/Asset7.png"
+                  className={styles["upper-img"]}
+                />
+              </div>
             </div>
           </div>
-          <div className={styles["top-bottom-img-wrapper"]}>
-            <img
-              src="/images/home/border.png"
-              alt=""
-              className={styles["top-bottom-img"]}
-            />
-          </div>{" "}
+        </div>
+        <div
+          className={`${styles["top-bottom-img-wrapper"]} dimond-image-wrapper`}
+        >
+          <img
+            src="/images/home/border.png"
+            alt=""
+            className={styles["top-bottom-img"]}
+          />
         </div>
       </section>
     </>

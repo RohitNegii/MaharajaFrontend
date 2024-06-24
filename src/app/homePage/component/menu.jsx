@@ -103,7 +103,9 @@ const Menu = () => {
         </div>
         <div className={styles["increasing-z-index"]}>
           <h3 className={styles["popular-picks-heading"]}> POPULAR PICKS</h3>
-          <div className={styles["after-heading-img-wrapper"]}>
+          <div
+            className={`${styles["after-heading-img-wrapper"]} dimond-image-wrapper`}
+          >
             <img
               src="/images/home/border.png"
               className={styles["after-heading-img"]}
@@ -170,7 +172,7 @@ const Menu = () => {
                           {ele.number}
                         </div>
                         <div className={styles["name-paragraph-wrapper"]}>
-                          <p>
+                          <p className={styles["dish-name-number-wrapper"]}>
                             <span className={styles["dish-name"]}>
                               {ele.name}
                             </span>

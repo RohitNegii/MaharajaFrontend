@@ -10,7 +10,9 @@ const ReserveTable = () => {
     <>
       <section className={styles["reserve-table-section"]}>
         <h2 className={styles["reserve-table-heading"]}> RESERVE A TABLE</h2>
-        <div className={styles["after-heading-img-div"]}>
+        <div
+          className={`${styles["after-heading-img-div"]} dimond-image-wrapper`}
+        >
           <img
             src="/images/Asset9.png"
             alt="heyy"

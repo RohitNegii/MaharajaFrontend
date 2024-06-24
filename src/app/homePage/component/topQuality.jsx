@@ -35,7 +35,7 @@ const TopQuality = () => {
       </div>
       <div className={style["for-top-gap"]}></div>
 
-      <div className={style["top-section-img"]}>
+      <div className={`${style["top-section-img"]} dimond-image-wrapper`}>
         <img
           src="/images/home/border.png"
           className={styles["center-design-img-wrapper-img"]}
@@ -44,10 +44,23 @@ const TopQuality = () => {
 
       <div className={style["center-section-wrapper"]}>
         <div className={style["left-section-img-wrapper"]}>
+          <div className={style["side-image-wrapper"]}>
+            <img
+              src="/images/home/Asset22.png"
+              className={style["side-image-wrapper-img"]}
+            />
+          </div>
+
           <img
             src="/images/home/Asset23.png"
             className={style["left-section-img"]}
           />
+          <div className={style["side-image-wrapper"]}>
+            <img
+              src="/images/home/Asset22.png"
+              className={style["side-image-wrapper-img"]}
+            />
+          </div>
         </div>
         <div className={style["right-section-wrapper"]}>
           <h2 className={style["heading"]}>
@@ -78,7 +91,9 @@ const TopQuality = () => {
         </div>
       </div>
 
-      <div className={styles["center-design-img-wrapper"]}>
+      <div
+        className={`${styles["center-design-img-wrapper"]} dimond-image-wrapper ${style["bottom-img-wrapper"]}`}
+      >
         <img
           src="/images/home/border.png"
           className={styles["center-design-img-wrapper-img"]}

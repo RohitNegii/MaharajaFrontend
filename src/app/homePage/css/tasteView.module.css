@@ -3,6 +3,7 @@
   background-color: var(--primaryColor);
   /* padding: 2% 0px 4%; */
   width: 100%;
+  padding: 3% 0px;
 
   /* height: 100vh; */
 }
@@ -10,7 +11,7 @@
   position: absolute;
   top: 5%;
   left: 0;
-  width: 10%;
+  width: 8%;
 }
 .top-left-img-wrapper-img {
   width: 100%;
@@ -20,19 +21,19 @@
   position: absolute;
   top: 5%;
   right: 0;
-  width: 10%;
+  width: 8%;
 }
 .bottom-left-img-wrapper {
   position: absolute;
   bottom: 5%;
   left: 0;
-  width: 10%;
+  width: 8%;
 }
 .bottom-right-img-wrapper {
   position: absolute;
   bottom: 5%;
   right: 0;
-  width: 10%;
+  width: 8%;
 }
 
 .left-design {
@@ -46,7 +47,7 @@
   color: #fff;
   font-weight: 400;
   font-size: 2.5rem;
-  padding-top: 3%;
+  /* padding-top: 3%; */
   /* margin-top: 2%; */
 }
 .taste-view-box-design-wrapper {

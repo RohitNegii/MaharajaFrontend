@@ -11,7 +11,7 @@ function SplendorOf() {
   return (
     <div>
       <section className={splendorStyle["main-section"]}>
-        <div className={styles["top-left-img-wrapper"]}>
+        <div className={`${styles["top-left-img-wrapper"]} `}>
           <img
             src="/images/home/Asset5.png"
             className={styles["top-left-img-wrapper-img"]}
@@ -36,7 +36,9 @@ function SplendorOf() {
           />
         </div>
 
-        <div className={styles["center-design-img-wrapper"]}>
+        <div
+          className={`${styles["center-design-img-wrapper"]} dimond-image-wrapper`}
+        >
           <img
             src="/images/home/border.png"
             className={styles["center-design-img-wrapper-img"]}
@@ -46,7 +48,7 @@ function SplendorOf() {
           Step Inside The Splendor Of <br /> MAHARAJA
         </h2>
         <div
-          className={styles["after-heading-img-wrapper"]}
+          className={`${styles["after-heading-img-wrapper"]} dimond-image-wrapper`}
           style={{ marginBottom: "0" }}
         >
           <img
@@ -61,7 +63,9 @@ function SplendorOf() {
             style={{ width: "100%", objectFit: "contain", height: "100%" }}
           />
         </div>
-        <div className={styles["center-design-img-wrapper"]}>
+        <div
+          className={`${styles["center-design-img-wrapper"]} dimond-image-wrapper`}
+        >
           <img
             src="/images/home/border.png"
             className={styles["center-design-img-wrapper-img"]}

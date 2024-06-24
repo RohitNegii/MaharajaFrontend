@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <>
       <main className="home-page-main">
+        <Banner />
         <section className="width-wrapper">
-          <Banner />
           <TopQuality />
           <TwoImageBox />
           <Menu />

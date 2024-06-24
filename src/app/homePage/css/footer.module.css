@@ -1,0 +1,124 @@
+.footer-wrapper {
+  background: #3b1016;
+  padding: 6% 0px 3%;
+}
+.footer-layout-wrapper {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  margin-inline: auto;
+}
+.footer-first-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* gap: 8%; */
+  gap: 1rem;
+  align-items: center;
+  /* justify-content: center; */
+  padding-left: 0;
+  width: 25%;
+}
+.route-name {
+  font-size: 1.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer-mid-section {
+  border-right: 1.8rem solid transparent;
+  border-left: 1.8rem solid transparent;
+
+  border-image: url("/images/home/Asset20.png") 100;
+  border-image-width: 1; /* Controls the width of the border image */
+  border-image-outset: 0; /* Apply image border */
+  border-image-repeat: unset;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  /* justify-content: center; */
+  width: 50%;
+}
+
+.logo-wrapper {
+  width: 20rem;
+}
+.footer-logo-img {
+  width: 100%;
+  object-fit: contain;
+}
+.number-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+.number-text {
+  font-size: 1.05rem;
+  color: #fff;
+}
+.number-text-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.number {
+  color: #e3c48e;
+}
+.timing-wrapper {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.yello-text {
+  color: #e3c48e;
+}
+
+.footer-third-section {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  /* justify-content: center; */
+  align-items: center;
+}
+.footer-heading {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.heading-bottom-img-wrapper {
+  width: 50%;
+  height: 0.5rem;
+  background-color: white;
+}
+.heading-bottom-img-wrapper-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.qr-code-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.qr-code-image {
+  width: 70%;
+}
+.qr-code-image-image {
+  width: 100%;
+  object-fit: contain;
+}
+.para {
+  font-size: 0.8rem;
+  color: #fff;
+}
+.icon-wrapper {
+  color: #fff;
+}
+.qr-code-wrapper-second {
+  margin-top: 0.5rem;
+}

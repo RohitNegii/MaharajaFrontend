@@ -1,6 +1,6 @@
 .menu-section {
   position: relative;
-  padding-top: 1rem;
+  padding: 3% 0px;
 }
 .background-img {
   width: 100%;
@@ -37,6 +37,7 @@
 .view-full-menu-wrapper {
   display: flex;
   justify-content: center;
+  margin-top: 3%;
 }
 .background-img-wrapper {
   background: url("/images/home/viewFullMenu.png");
@@ -55,6 +56,9 @@
   text-decoration: none;
   margin: 4rem;
   white-space: nowrap;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 3%;
 }
 .after-heading-img-wrapper {
   width: 16%;

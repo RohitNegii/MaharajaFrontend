@@ -6,7 +6,9 @@ const TwoImageBox = () => {
   return (
     <>
       <section className={styles["two-image-section"]}>
-        <div className={styles["upper-down-img-wrapper"]}>
+        <div
+          className={`${styles["upper-down-img-wrapper"]} dimond-image-wrapper`}
+        >
           <img
             src="/images/home/Asset17.png"
             alt=""
@@ -28,7 +30,10 @@ const TwoImageBox = () => {
           </div>
         </div>
 
-        <div className={styles["upper-down-img-wrapper"]}>
+        <div
+          className={`${styles["upper-down-img-wrapper"]} dimond-image-wrapper`}
+        >
+          {" "}
           <img
             src="/images/home/Asset17.png"
             alt=""

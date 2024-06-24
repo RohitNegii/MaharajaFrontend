@@ -15,7 +15,9 @@ function Banner() {
         {user.isEnglish ? "Authentic & Hygienic" : "Authentisch & Hygienisch"}
       </p>
 
-      <div className={styles["after-heading-img-wrapper"]}>
+      <div
+        className={`${styles["after-heading-img-wrapper"]} dimond-image-wrapper`}
+      >
         {/* <Image src={design1} className={styles["after-heading-img"]} /> */}
         <img
           src="/images/home/border.png"
@@ -25,8 +27,22 @@ function Banner() {
 
       <h1 className={styles["heading-h1"]}>
         {user.isEnglish
-          ? "Enjoy The Best Indian Cuisine In The Heart Of Landshut"
-          : "Genießen Sie die beste indische Küche im Herzen von Landshut"}
+          ? "Enjoy The Best Indian Cuisine \nIn The Heart Of Landshut"
+              .split("\n")
+              .map((line, index) => (
+                <React.Fragment key={index}>
+                  {line}
+                  <br />
+                </React.Fragment>
+              ))
+          : "Genießen Sie die beste indische \nKüche im Herzen von Landshut"
+              .split("\n")
+              .map((line, index) => (
+                <React.Fragment key={index}>
+                  {line}
+                  <br />
+                </React.Fragment>
+              ))}
       </h1>
       <p className={styles["heading-last"]}>
         {user.isEnglish

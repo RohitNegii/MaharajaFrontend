@@ -49,7 +49,9 @@ const TasteView = () => {
 
         <h2 className={styles["taste-view-heading"]}>Your Taste Views</h2>
 
-        <div className={styles["after-heading-img-wrapper"]}>
+        <div
+          className={`${styles["after-heading-img-wrapper"]} dimond-image-wrapper`}
+        >
           <img
             src="/images/home/border.png"
             className={styles["after-heading-img"]}
@@ -96,7 +98,9 @@ const TasteView = () => {
             />
           </div>
         </div>
-        <div className={styles["center-design-img-wrapper"]}>
+        <div
+          className={`${styles["center-design-img-wrapper"]} dimond-image-wrapper`}
+        >
           <img
             src="/images/home/border.png"
             className={styles["center-design-img-wrapper-img"]}

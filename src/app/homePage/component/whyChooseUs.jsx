@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
     <>
       <section className={styles["why-choose-section"]}>
         <h2 className={styles["why-choose-us-heading"]}>WHY CHOOSE US?</h2>
-        <div className={styles["img-after-choose"]}>
+        <div className={`${styles["img-after-choose"]} dimond-image-wrapper`}>
           <img src="/images/Asset9.png" alt="heyy" />
         </div>
 
