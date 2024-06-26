@@ -73,10 +73,12 @@
   width: 90%;
   margin-top: 2rem;
   margin-inline: auto;
+  position: relative;
+  z-index: 28;
 }
 .transparent-line {
-  height: 2px;
-  border-top: 2px solid var(--primaryYellow);
+  height: 3px;
+  border-top: 3px solid var(--primaryYellow);
   align-items: center;
   border-left: 450px solid transparent;
   border-right: 450px solid transparent;

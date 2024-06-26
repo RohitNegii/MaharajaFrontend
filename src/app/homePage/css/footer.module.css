@@ -122,3 +122,65 @@
 .qr-code-wrapper-second {
   margin-top: 0.5rem;
 }
+@media screen and (max-width:900px) {
+  .footer-layout-wrapper{
+    width: 98%;
+  }
+  .route-name{
+    font-size: 1.2rem;
+  }
+  .footer-mid-section{
+  border-right: 1.4rem solid transparent;
+  border-left: 1.4rem solid transparent;
+  }
+  .logo-wrapper{
+    width: 70%;
+  }
+  .timing-wrapper{
+    font-size: 1.1rem;
+  }
+  .qr-code-image{
+    width: 60%;
+  }
+  .footer-heading{
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 680px) {
+  .footer-layout-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    width: 90%;
+  }
+  .footer-first-wrapper {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .route-name {
+    font-size: 1.1rem;
+  }
+  .footer-mid-section {
+    width: 100%;
+    border: none;
+  }
+  .footer-third-section {
+    width: 100%;
+  }
+  .footer-heading {
+    font-size: 1.2rem;
+  }
+  .qr-code-image {
+    width: 90%;
+  }
+  .logo-wrapper {
+    width: 80%;
+  }
+  .number-text {
+    font-size: 1rem;
+  }
+  .timing-wrapper {
+    font-size: 1rem;
+  }
+}

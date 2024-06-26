@@ -35,6 +35,19 @@ body::-webkit-scrollbar {
 .map {
   width: 100%;
 }
-.map-iframe{
+.map-iframe {
   width: 100%;
+}
+.background-transparent-color {
+  background: #3b10164f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .dimond-image-wrapper {
+    width: 30% !important;
+  }
 }

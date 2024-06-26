@@ -101,6 +101,7 @@ const Menu = () => {
             className={styles["background-img-img"]}
           />
         </div>
+
         <div className={styles["increasing-z-index"]}>
           <h3 className={styles["popular-picks-heading"]}> POPULAR PICKS</h3>
           <div
@@ -111,9 +112,11 @@ const Menu = () => {
               className={styles["after-heading-img"]}
             />
           </div>
+          {/* <div className="background-transparent-color"> </div> */}
+
           <h2 className={styles["our-special-menu"]}> Our Special Menu</h2>
           <div className={styles["main-section-wrapper"]}>
-            <div className={styles["transparent-line"]}></div>
+          <div className={styles["transparent-line"]}></div>
             <div className={styles["menu-wrapper"]}>
               {menu.map((ele, i) => {
                 return (

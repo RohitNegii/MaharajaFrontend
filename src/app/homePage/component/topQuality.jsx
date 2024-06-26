@@ -9,6 +9,8 @@ const TopQuality = () => {
   let user = useContext(userContext);
   return (
     <section className={style["top-quality-section"]}>
+      <div className="background-transparent-color"> </div>
+
       <div className={styles["top-left-img-wrapper"]}>
         <img
           src="/images/home/Asset5.png"
