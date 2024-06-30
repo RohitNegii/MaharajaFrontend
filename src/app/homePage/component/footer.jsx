@@ -85,7 +85,7 @@ const Footer = () => {
             <h2 className={styles["footer-heading"]}> FOLGEN SIE UNS</h2>
             <div className={styles["heading-bottom-img-wrapper"]}>
               <img
-                src="/images/Asset9.png"
+                src="/images/home/Asset6.png"
                 className={styles["heading-bottom-img-wrapper-img"]}
               />
             </div>

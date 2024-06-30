@@ -49,6 +49,7 @@ function Banner() {
           ? "Enjoy a delicious meal with your loved ones"
           : "Genießen Sie eine köstliche Mahlzeit mit Ihren Liebsten Speisekarte ansehen"}
       </p>
+
       <Button variant="outlined" className={styles["view-menu-btn"]}>
         VIEW MENU
       </Button>

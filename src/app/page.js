@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <main className="home-page-main">
         <Banner />
-        <section className="width-wrapper">
+        {/* <section className="width-wrapper"> */}
           <TopQuality />
           <TwoImageBox />
           <Menu />
@@ -25,7 +25,7 @@ export default function Home() {
           <TasteView />
           <ReserveTable />
           <SplendorOf />
-        </section>
+        {/* </section> */}
       </main>
     </>
   );

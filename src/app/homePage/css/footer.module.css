@@ -1,11 +1,12 @@
 .footer-wrapper {
   background: #3b1016;
-  padding: 6% 0px 3%;
+  padding: 3% 0px 2%;
 }
 .footer-layout-wrapper {
   display: flex;
   width: 90%;
   justify-content: center;
+  align-items: center;
   margin-inline: auto;
 }
 .footer-first-wrapper {
@@ -14,7 +15,7 @@
   /* gap: 8%; */
   gap: 1rem;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   padding-left: 0;
   width: 25%;
 }
@@ -91,8 +92,6 @@
 }
 .heading-bottom-img-wrapper {
   width: 50%;
-  height: 0.5rem;
-  background-color: white;
 }
 .heading-bottom-img-wrapper-img {
   width: 100%;

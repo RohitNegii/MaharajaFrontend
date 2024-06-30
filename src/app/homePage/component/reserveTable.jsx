@@ -22,41 +22,17 @@ const ReserveTable = () => {
 
         <div className={styles["form-wrapper"]}>
           <div className={styles["first-row-wrapper"]}>
-            <TextField
-              id="outlined-basic"
-              label="Outlined"
-              variant="outlined"
-              className={styles["half-input"]}
-            />
-            <TextField
-              id="outlined-basic"
-              label="Outlined"
-              variant="outlined"
-              className={styles["half-input"]}
-            />
+            <input type="text" className={styles["half-input"]} />
+            <input type="text" className={styles["half-input"]} />
           </div>
           <div className={styles["center-text"]}>
-            <TextField
-              id="outlined-basic"
-              label="Outlined"
-              variant="outlined"
-              className={styles["full-text"]}
-            />
+            <input type="text" className={styles["full-text"]} />
           </div>
 
           <div className={styles["first-row-wrapper"]}>
-            <TextField
-              id="outlined-basic"
-              label="Outlined"
-              variant="outlined"
-              className={styles["half-input"]}
-            />
-            <TextField
-              id="outlined-basic"
-              label="Outlined"
-              variant="outlined"
-              className={styles["half-input"]}
-            />
+            <input type="text" className={styles["half-input"]} />
+
+            <input type="text" className={styles["half-input"]} />
           </div>
           <textarea className={styles["text-area"]} rows={5}></textarea>
         </div>

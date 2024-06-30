@@ -92,7 +92,7 @@
 .heading {
   font-family: var(--formFamily);
   color: var(--primaryYellow);
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   /* margin-top: 1rem; */
   font-weight: 500;
@@ -101,7 +101,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .timing-div {
   font-size: 1.5rem;
