@@ -90,6 +90,7 @@
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
   overflow: hidden;
+  scroll-snap-align: end;
 }
 .box-img-wrapper {
   position: absolute;
@@ -105,8 +106,16 @@
 }
 .two-box-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  overflow-y: scroll;
+  /* justify-content: space-between; */
+  gap: 5%;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+
+}
+.two-box-wrapper::-webkit-scrollbar{
+  display: none;
 }
 .text-name-wrapper {
   width: 88%;
@@ -161,6 +170,12 @@
 .after-heading-img {
   width: 100%;
   object-fit: contain;
+}
+.three-squre-box-wrapper-img{
+  opacity: 0.1;
+}
+.active-three-squre-box-wrapper-img{
+  opacity: 1 !important;
 }
 @media screen and (max-width: 1000px) {
   .taste-view-box-design-wrapper {

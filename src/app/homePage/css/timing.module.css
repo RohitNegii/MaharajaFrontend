@@ -49,6 +49,22 @@
   z-index: 3;
   gap: 5rem;
 }
+
+.heading-bottom-img-wrapper {
+  width: 30%;
+  margin-inline: auto;
+  margin-top: -1%;
+}
+.heading-bottom-img-wrapper-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+
+
 .center-section-wrapper {
   display: flex;
   justify-content: space-between;

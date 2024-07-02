@@ -46,6 +46,12 @@ const Timing = () => {
                   : "Genießen Sie die Aromen im Maharaja, das indische Restaurant in Adlkofen. Freuen Sie sich auf authentische und köstliche indische Gerichte in einer warmen und exotischen Atmosphäre. Unser ausgezeichneter Service und die delikate Küche werden Ihr kulinarisches Erlebnis unvergesslich machen."}
               </p>
               <h2 className={styles["heading"]}>Öffnungszeiten</h2>
+              <div className={styles["heading-bottom-img-wrapper"]}>
+                <img
+                  src="/images/home/Asset6.png"
+                  className={styles["heading-bottom-img-wrapper-img"]}
+                />
+              </div>
 
               <div className={styles["timing-wrapper"]}>
                 <div className={styles["timing-div"]}>
