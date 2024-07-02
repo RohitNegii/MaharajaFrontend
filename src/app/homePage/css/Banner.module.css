@@ -37,12 +37,12 @@
   line-height: 2.2rem;
 }
 .view-menu-btn {
-  color: #fff;
-  border: 2px solid var(--primaryYellow);
+  color: #fff !important;
+  border: 2px solid var(--primaryYellow) !important;
   font-size: 1.3rem;
   font-weight: 500;
   padding: 0.2rem 3rem;
-  background-color: #3b1016a1;
+  background-color: #3b1016a1 !important;
 }
 .view-menu-btn:hover {
   border: 2px solid var(--primaryYellow);
@@ -58,11 +58,11 @@
 
 @media (max-width: 600px) {
   .auth-heading {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .heading-h1 {
-    font-size: 1.7rem;
-    line-height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     width: 100%;
   }
   .after-heading-img-wrapper {
@@ -70,14 +70,20 @@
   }
   .view-menu-btn {
     margin-top: 5%;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .after-heading-img-wrapper {
     width: 8rem;
     margin: 0.5rem 0px;
   }
   .view-menu-btn {
-    font-size: 0.9rem;
-    padding: 0.2rem 2rem;
+    font-size: 0.9rem !important;
+    padding: 0.2rem 15% !important;
+    border: 1px solid var(--primaryYellow) !important;
+  }
+  .heading-last{
+    font-size: 1rem;
+    width: 80%;
+    text-align: center;
   }
 }

@@ -50,4 +50,10 @@ body::-webkit-scrollbar {
   .dimond-image-wrapper {
     width: 30% !important;
   }
+  .map-iframe{
+    height: 30vh;
+  }
+    .background-transparent-color{
+    display: none;
+  }
 }

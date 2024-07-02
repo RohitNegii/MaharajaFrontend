@@ -4,7 +4,7 @@ import styles from "../css/tasteView.module.css";
 
 const TasteView = () => {
   const [imageInd, setImageInd] = useState(0);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(false);
   const teamRef = useRef(null);
 
   const boxData = [
@@ -47,11 +47,14 @@ const TasteView = () => {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    window.addEventListener("resize", handleResize);
+    if (window) {
+      setIsMobile(window.innerWidth <= 768);
+      window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
   }, []);
 
   // Automatic scrolling effect

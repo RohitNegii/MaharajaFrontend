@@ -109,7 +109,7 @@
 
 @media screen and (max-width: 600px) {
   .why-choose-section {
-    padding: 3% 0px 19%;
+    padding: 6% 0px 19%;
   }
   .four-box-wrapper {
     justify-content: center;
@@ -120,6 +120,12 @@
     min-width: 90%;
     width: 90%;
     gap: 0.4rem;
+  }
+  .four-box-paragraph{
+    font-size: 0.9rem;
+  }
+  .four-box-sub-heading{
+    font-size: 1.2rem;
   }
   .four-box-icon {
     width: 2rem;
@@ -133,7 +139,7 @@
     font-size: 1.2rem;
   }
   .sub-heading {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .img-after-choose {
     width: 6rem;

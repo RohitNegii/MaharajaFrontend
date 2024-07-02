@@ -25,6 +25,7 @@
   justify-content: center;
   margin-inline: auto;
   gap: 0.5rem;
+  display: none;
   /* margin-bottom: 10%; */
 }
 .three-squre-box-wrapper-img {
@@ -77,5 +78,8 @@
   }
   .upper-down-img-wrapper {
     width: 8rem;
+  }
+  .two-image-section{
+    padding: 6% 0px;
   }
 }

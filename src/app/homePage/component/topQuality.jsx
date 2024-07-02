@@ -11,30 +11,32 @@ const TopQuality = () => {
     <section className={style["top-quality-section"]}>
       <div className="background-transparent-color"> </div>
 
-      <div className={styles["top-left-img-wrapper"]}>
+      <div className={`${styles["top-left-img-wrapper"]} ${style["top-left-img-wrapper"]}`}>
         <img
           src="/images/home/Asset5.png"
           className={styles["top-left-img-wrapper-img"]}
         />
       </div>
-      <div className={styles["top-right-img-wrapper"]}>
+      <div className={`${styles["top-right-img-wrapper"]} ${style["top-right-img-wrapper"]}`}>
         <img
           src="/images/home/Asset4.png"
           className={styles["top-left-img-wrapper-img"]}
         />
       </div>
-      <div className={styles["bottom-left-img-wrapper"]}>
+      <div className={`${styles["bottom-left-img-wrapper"]} ${style["bottom-left-img-wrapper"]}`}>
         <img
           src="/images/home/Asset2.png"
           className={styles["top-left-img-wrapper-img"]}
         />
       </div>
-      <div className={styles["bottom-right-img-wrapper"]}>
+      <div className={`${styles["bottom-right-img-wrapper"]} ${style["bottom-right-img-wrapper"]}`}>
         <img
           src="/images/home/Asset3.png"
           className={styles["top-left-img-wrapper-img"]}
         />
       </div>
+
+
       <div className={style["for-top-gap"]}></div>
 
       <div className={`${style["top-section-img"]} dimond-image-wrapper`}>

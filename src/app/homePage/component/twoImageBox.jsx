@@ -13,7 +13,7 @@ const TwoImageBox = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(false);
   const teamRef = useRef(null);
 
   useEffect(() => {
@@ -21,11 +21,16 @@ const TwoImageBox = () => {
       setIsMobile(window.innerWidth <= 768);
     };
 
+    if(window){
+
+    
+
     window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize);
-    };
+    }
+  }
   }, []);
 
   const handleIndicatorClick = (index) => {

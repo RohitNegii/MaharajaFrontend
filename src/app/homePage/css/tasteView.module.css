@@ -212,6 +212,7 @@
   }
   .two-box-wrapper {
     gap: 2rem;
+    width: 100%;
   }
   .taste-view-heading {
     font-size: 1.7rem;
@@ -248,14 +249,15 @@
 
   .taste-view-box-design-wrapper {
     width: 90%;
+    margin-bottom: 10%;
   }
   .top-left-img-wrapper,
   .top-right-img-wrapper,
   .bottom-left-img-wrapper,
   .bottom-right-img-wrapper {
-    width: 18%;
+    width: 14%;
   }
   .three-squre-box-wrapper {
-    margin-bottom: 30%;
+    margin-bottom: 0%;
   }
 }
