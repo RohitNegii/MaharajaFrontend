@@ -13,15 +13,34 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-
+import { useRouter } from "next/navigation";
 import styles from "../css/header.module.css";
 
-const pages = ["Home", "Menu", "About Us", "Track order"];
+const pages = [
+  {
+    name: "Home",
+    route: "/",
+  },
+  {
+    name: "Menu",
+    route: "/menu",
+  },
+  {
+    name: "About Us",
+    route: "/about",
+  },
+  {
+    name: "Track order",
+    route: "/track",
+  },
+];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 import { userContext } from "@/app/context/context";
+import Link from "next/link";
 
 function Header() {
+  const router = useRouter();
   let user = React.useContext(userContext);
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -33,7 +52,13 @@ function Header() {
     setAnchorElUser(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
+  const handleCloseNavMenu = (item) => {
+    if (item.name == "Menu") {
+      router.push(`${item.route}`);
+    }
+     if (item.name == "Home") {
+       router.push(`${item.route}`);
+     }
     setAnchorElNav(null);
   };
 
@@ -91,13 +116,26 @@ function Header() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem
+                  key={page.name}
+                  onClick={() => handleCloseNavMenu(page.name, page.route)}
+                >
+                  <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">Reserve Table</Typography>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center" onClick={() => toogleLanguage()}>
+                  {user.isEnglish ? "Eng" : "Ger"}
+                </Typography>
+              </MenuItem>
             </Menu>
           </Box>
-          <div className={`${styles["header-wrapper"]} ${styles["header-for-mobile"]} `}>
+          <div
+            className={`${styles["header-wrapper"]} ${styles["header-for-mobile"]} `}
+          >
             <img src="/images/home/logo.png" className={styles["logo-img"]} />
           </div>
           <Box
@@ -111,12 +149,12 @@ function Header() {
           >
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={page.name}
+                onClick={() => handleCloseNavMenu(page)}
                 sx={{ my: 2, color: "white", display: "block" }}
                 style={{ fontSize: "1rem" }}
               >
-                {page}
+                {page.name}
               </Button>
             ))}
             <Button

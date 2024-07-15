@@ -23,8 +23,6 @@ const TwoImageBox = () => {
 
     if(window){
 
-    
-
     window.addEventListener("resize", handleResize);
 
     return () => {
