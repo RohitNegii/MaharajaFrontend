@@ -9,7 +9,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 const Footer = () => {
   return (
     <>
-      <footer className={styles["footer-wrapper"]}>
+      <footer className={`${styles["footer-wrapper"]} footer`}>
         <div className={styles["footer-layout-wrapper"]}>
           <div className={styles["footer-first-wrapper"]}>
             <Link href="#" className={styles["route-name"]}>

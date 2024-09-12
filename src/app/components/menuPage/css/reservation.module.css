@@ -97,3 +97,25 @@
   width: 100%;
   object-fit: contain;
 }
+@media screen and (max-width:600px) {
+  .reservation-center-section{
+    width: 90%;
+    padding: 1rem 2%;
+  }
+  .book-your-table-heading{
+    font-size: 1.3rem;
+  }
+  .reservation-para{
+    font-size: 0.85rem;
+  }
+  .reservation-heading{
+    font-size: 1.1rem;
+  }
+  .reserve-table-button{
+    font-size: 0.9rem;
+  }
+  .reservation-right-section{
+    gap: 0.9rem;
+  }
+  
+}

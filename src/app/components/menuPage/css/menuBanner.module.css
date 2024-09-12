@@ -47,3 +47,24 @@
     width: 100%;
     object-fit: contain;
 }
+
+@media screen and (max-width:600px) {
+    .small-heading{
+        font-size: 1.5rem;
+        white-space: nowrap;
+    }
+    .our-menu{
+        font-size: 2.5rem;
+        white-space: nowrap;
+    }
+    .menu-baner-img{
+        object-fit: fill;
+        
+    }
+    .menu-section{
+        height: 35vh;
+    }
+    .img-after-h2{
+        width: 100% !important;
+    }
+}

@@ -200,7 +200,71 @@
 }
 
 @media screen and (max-width: 600px) {
-  .menu-section {
+  .menu-section{
+    padding: 7% 0px;
+  }
+  .one-menu-wrapper{
+    gap: 0.3rem;
+  }
+  .main-section-wrapper {
+    width: 95%;
+  }
+  .menu-wrapper {
+    overflow-y: scroll;
+    justify-content: flex-start;
+    padding: 1rem 0px;
+    gap: 5%;
+  }
+  .menu-wrapper::-webkit-scrollbar {
     display: none;
+  }
+  .icon-wrapper {
+    width: 1rem;
+  }
+  .two-section-divider {
+    flex-direction: column;
+  }
+  .left-section {
+    width: 100%;
+  }
+  .one-combo-wrapper::after {
+  }
+  .left-border::after {
+    position: unset;
+    background: unset;
+  }
+  .menu-name {
+    white-space: nowrap;
+    font-size: 1.2rem;
+  }
+  .one-combo-wrapper {
+    padding-inline: 1rem;
+  }
+  .view-full-menu-link {
+    font-size: 0.9rem;
+  }
+  .popular-picks-heading {
+    font-size: 1.2rem;
+  }
+  .our-special-menu {
+    font-size: 1.3rem;
+  }
+  .main-section-wrapper {
+    margin-top: 1rem;
+  }
+  .transparent-line {
+      border-top: 3px solid var(--primaryYellow);
+
+    border-left: 5rem solid transparent !important;
+    border-right: 5rem solid transparent !important;
+  }
+  .number-wrapper{
+    font-size: 1rem;
+  }
+  .dish-name{
+    font-size: 1.5rem;
+  }
+  .price-wrapper{
+    font-size: 1rem;
   }
 }
