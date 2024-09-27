@@ -26,18 +26,24 @@ const AddDishModal = ({
   const [dishType, setDishType] = useState([]);
   const [dishNumber, setDishNumber] = useState("");
   const [description, setDescription] = useState("");
-  const [showDishToHomePage, setShowDishToHomePage] = useState(true); // Updated state
+  const [showDishToHomePage, setShowDishToHomePage] = useState(true);
+  const [showDrinks, setShowDrinks] = useState(false);
+  const [showToopins, setShowToopins] = useState(false);
 
   useEffect(() => {
     if (editingDish) {
+      console.log("editi", editingDish);
       setDishName(editingDish.name || "");
       setCategory(editingDish.category ? editingDish.category._id : "");
       setPrice(editingDish.price || 0);
       setDishType(editingDish.type || []);
       setDishNumber(editingDish.number || "");
       setDescription(editingDish.description || "");
-      setShowDishToHomePage(editingDish.showDishToHomePage ?? true); // Updated for key name
+      setShowDishToHomePage(editingDish.showDishToHomePage ?? true);
+      setShowDrinks(editingDish.showDrinks ?? false);
+      setShowToopins(editingDish.showToopins ?? false);
     } else {
+      console.log("else");
       // Reset form if not editing
       setDishName("");
       setCategory("");
@@ -45,7 +51,9 @@ const AddDishModal = ({
       setDishType([]);
       setDishNumber("");
       setDescription("");
-      setShowDishToHomePage(true); // Reset to default value
+      setShowDishToHomePage(true);
+      setShowDrinks(false);
+      setShowToopins(false);
     }
   }, [editingDish]);
 
@@ -61,7 +69,9 @@ const AddDishModal = ({
       number: dishNumber,
       description,
       price,
-      showDishToHomePage, // Updated key name
+      showDishToHomePage,
+      showDrinks,
+      showToopins,
     });
     handleClose(); // Close the modal after saving
   };
@@ -158,7 +168,27 @@ const AddDishModal = ({
                 onChange={(e) => setShowDishToHomePage(e.target.checked)}
               />
             }
-            label="Show Dish to Home Page" // Updated label
+            label="Show Dish to Home Page"
+            sx={{ marginTop: 2 }}
+          />
+          <FormControlLabel
+            control={
+              <Checkbox
+                checked={showDrinks}
+                onChange={(e) => setShowDrinks(e.target.checked)}
+              />
+            }
+            label="Show Drinks"
+            sx={{ marginTop: 2 }}
+          />
+          <FormControlLabel
+            control={
+              <Checkbox
+                checked={showToopins}
+                onChange={(e) => setShowToopins(e.target.checked)}
+              />
+            }
+            label="Show Toppings"
             sx={{ marginTop: 2 }}
           />
           <Button

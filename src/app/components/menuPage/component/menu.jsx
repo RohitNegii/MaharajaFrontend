@@ -1,16 +1,23 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import styles from "../css/menu.module.css";
 import SearchIcon from "@mui/icons-material/Search";
 import axios from "axios";
+
+import { userContext } from "@/app/context/context";
 
 import Link from "next/link";
 
 const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 const imageBaseUrl = process.env.NEXT_PUBLIC_IMAGE_BASE_URL;
 
+import { useRouter } from "next/navigation";
+
 const Menu = () => {
+
+  const user=useContext(userContext)
+  const route=useRouter()
   const menu = [
     { name: "Breakfast", type: "breakfast" },
     { name: "Lunch", type: "lunch" },
@@ -62,6 +69,11 @@ const Menu = () => {
     setSelectedCategory(event.target.value);
   };
 
+
+  const dishOpen=(ele)=>{
+  user.setMenuDetails(ele)
+  route.push(`/menu/${ele._id}`)
+  }
   return (
     <section className={styles["menu-section"]}>
       {/* Decorative Images */}
@@ -183,7 +195,7 @@ const Menu = () => {
                 <div className={styles["menu-center-section"]}>
                   {dishs.dishes.map((ele, index) => {
                     return (
-                      <div className={styles["one-combo-wrapper"]} key={index}>
+                      <div className={styles["one-combo-wrapper"]} key={index} onClick={()=>dishOpen(ele)}>
                         <div className={styles["left-section"]}>
                           <div className={styles["number-wrapper"]}>
                             {ele.number}

@@ -297,3 +297,128 @@
   background-color: transparent;
   font-size: 1rem;
 }
+
+/* sfsdf */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 2%;
+}
+
+.menu {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  width: 90%;
+  color: #f5deb3;
+  margin-inline: auto;
+}
+
+.header {
+  font-size: 1.5rem;
+  /* margin-bottom: 1rem; */
+  font-size: 2rem;
+  color: var(--primaryYellow);
+  font-family: var(--formFamily);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.pizza {
+  color: #ffcc99;
+}
+
+.priceContainer {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  flex-direction: column;
+  /* margin-bottom: 1rem; */
+}
+
+.price {
+  font-size: 2.5rem;
+}
+
+.quantityContainer {
+  display: flex;
+  align-items: center;
+}
+.dishDescription{
+  width: 70%;
+}
+
+.quantityButton {
+  display: inline-block;
+  background-color: #f5deb3;
+  color: var(--primaryColor);
+  padding: 0rem 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.quantity {
+  border-radius: 5px;
+  margin: 0 0.5rem;
+  padding: 0.1rem 2rem;
+  background-color: #b8425244;
+  font-size: 1.25rem;
+}
+
+.section {
+  margin-bottom: 1rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primaryYellow);
+}
+
+.sizeButton {
+  background-color: #b8425244;
+  color: #fff;
+  padding: 0.3rem 1.5rem;
+  margin-right: 0.5rem;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.addOns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.dishPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+}
+
+@media (min-width: 640px) {
+  .addOns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.checkbox {
+  margin-right: 0.5rem;
+}

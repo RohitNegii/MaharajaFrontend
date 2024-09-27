@@ -18,15 +18,25 @@ const Sidebar = () => {
      }, []);
   return (
     <div className="flex flex-col w-64 h-full bg-gray-800 text-white fixed">
-
       <nav className="flex flex-col mt-10">
-        <Link href="/admin/category" className="px-4 py-2 text-lg hover:bg-gray-700">
+        <Link
+          href="/admin/category"
+          className="px-4 py-2 text-lg hover:bg-gray-700"
+        >
           Category
         </Link>
-        <Link href="/admin/dish" className="px-4 py-2 text-lg hover:bg-gray-700">
+        <Link
+          href="/admin/dish"
+          className="px-4 py-2 text-lg hover:bg-gray-700"
+        >
           Dish
         </Link>
-       
+        <Link
+          href="/admin/reservedtable"
+          className="px-4 py-2 text-lg hover:bg-gray-700"
+        >
+          Reserved Table List
+        </Link>
       </nav>
     </div>
   );

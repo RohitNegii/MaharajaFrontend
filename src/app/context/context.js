@@ -7,12 +7,15 @@ import { useState } from "react";
 
 export const UserProvider = ({ children }) => {
   const [isEnglish, setIsEnglish] = useState(true);
+  const [menuDetails, setMenuDetails] = useState([]);
 
   return (
     <userContext.Provider
       value={{
         setIsEnglish,
         isEnglish,
+        setMenuDetails,
+        menuDetails,
       }}
     >
       {children}
