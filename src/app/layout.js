@@ -17,6 +17,9 @@ import Header from "./homePage/component/Header";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>Maharaja</title>
+      </head>
       <UserProvider>
         <body className={inter.className}>
           <Header />
@@ -39,7 +42,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
-
-
-
