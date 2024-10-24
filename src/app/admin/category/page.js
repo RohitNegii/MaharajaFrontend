@@ -21,8 +21,9 @@ const CategoryAdmin = () => {
   });
   const [editingId, setEditingId] = useState(null);
 
-  const apiEndpoint = "http://localhost:4000/api/categories";
-  const imageBaseURL = "http://localhost:4000"; // Base URL to access images
+  const apiEndpoint = `${process.env.NEXT_PUBLIC_API_BASE_URL}/categories `;
+
+  const imageBaseUrl = process.env.NEXT_PUBLIC_IMAGE_BASE_URL;
 
   useEffect(() => {
     fetchCategories();
@@ -70,8 +71,7 @@ const CategoryAdmin = () => {
       if (editingId) {
         await axios.put(`${apiEndpoint}/${editingId}`, formData);
       } else {
-        await axios.post(apiEndpoint, formData
-        );
+        await axios.post(apiEndpoint, formData);
       }
       fetchCategories();
       handleModalClose();

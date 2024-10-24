@@ -5,7 +5,9 @@ import styles from "../css/reserveTable.module.css";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 
-  const apiEndpoint = "http://localhost:4000/api/reserve";
+
+  const apiEndpoint = `${process.env.NEXT_PUBLIC_API_BASE_URL}/reserve`;
+
 
 
 const ReserveTable = () => {

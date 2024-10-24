@@ -15,7 +15,9 @@ import {
 } from "@mui/material";
 import { Delete } from "@mui/icons-material";
 
-const apiEndpoint = "http://localhost:4000/api";
+
+const apiEndpoint = process.env.NEXT_PUBLIC_API_BASE_URL;
+
 
 const AdminReservationManager = () => {
   const [reservations, setReservations] = useState([]);

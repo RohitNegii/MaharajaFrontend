@@ -5,8 +5,6 @@ const page = () => {
   return (
 <>
 <Index/>
-
-
 </>  )
 }
 

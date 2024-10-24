@@ -17,7 +17,8 @@ import {
 import { Delete, Edit, Add } from "@mui/icons-material";
 import AddDishModal from "@/app/components/admin/dish/addDish";
 
-const apiEndpoint = "http://localhost:4000/api";
+const apiEndpoint = process.env.NEXT_PUBLIC_API_BASE_URL;
+
 
 const AdminDishManager = () => {
   const [dishes, setDishes] = useState([]);
